@@ -4,7 +4,7 @@ const HeroArea = () => {
     return (
         <div>
             <div>
-                
+
             </div>
         </div>
     );
