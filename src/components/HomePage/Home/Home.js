@@ -8,7 +8,6 @@ import HomeHeader from '../HomeHeader/HomeHeader';
 const Home = () => {
     return (
         <div>
-            <HomeHeader/>
             <HeroArea/>
             <Header/>
             <ChooseUs/>

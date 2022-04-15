@@ -6,7 +6,7 @@ const useProduct=()=>{
 const useDinner=()=>{
     const [dinner,setDinner]=useState([])
     useEffect(()=>{
-        fetch('https://mdibrahimkholil7.github.io/dinner-json/dinner.json')
+        fetch('https://mdibrahimkholil7.github.io/dinner-json/dinner-data/dinner.json')
         .then(res=>res.json())
         .then(data=>setDinner(data))
     },[])
@@ -30,5 +30,14 @@ const useBreakfast=()=>{
     },[])
     return [breakfast,setBreakfast]
 }
-
-export {useDinner,useProduct,useLunch,useBreakfast}
+const useFood=()=>{
+    const [allFood,setAllFood]=useState([])
+    const [breakfast]=useBreakfast()
+    const [lunch]=useLunch()
+    const [dinner]=useDinner()
+    // const product=[...dinner,...lunch,...breakfast]
+    console.log(lunch,dinner,breakfast)
+    // setAllFood(product)
+    return [allFood,setAllFood]
+}
+export {useDinner,useProduct,useLunch,useBreakfast,useFood}

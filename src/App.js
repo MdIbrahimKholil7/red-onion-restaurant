@@ -9,17 +9,15 @@ import UnUse from './components/UnUse/UnUse';
 import MenuItem from './components/MenuItem/MenuItem';
 import SignUp from './components/Shared/SignUp/SignUp';
 import Login from './components/Shared/Login/Login';
+import HomeHeader from './components/HomePage/HomeHeader/HomeHeader';
 
 
 function App() {
   return (
     <div className="App">
+      <HomeHeader/>
       <Routes>
         <Route path='/' element={<Home />}>
-         {/*  <Route path='/' element={<Breakfast/>}></Route>
-          <Route path='/breakfast' element={<Breakfast/>}></Route>
-          <Route path='/lunch' element={<Lunch/>}></Route>
-          <Route path='/dinner' element={<Dinner/>}></Route> */}
         </Route>
         <Route path='/menuitem/:itemId' element={<MenuItem/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
