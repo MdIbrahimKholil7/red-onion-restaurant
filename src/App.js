@@ -6,6 +6,9 @@ import Breakfast from './components/HomePage/Breakfast/Breakfast';
 import Dinner from './components/HomePage/Dinner/Dinner';
 import Lunch from './components/HomePage/Lunch/Lunch';
 import UnUse from './components/UnUse/UnUse';
+import MenuItem from './components/MenuItem/MenuItem';
+import SignUp from './components/Shared/SignUp/SignUp';
+
 
 function App() {
   return (
@@ -17,7 +20,8 @@ function App() {
           <Route path='/lunch' element={<Lunch/>}></Route>
           <Route path='/dinner' element={<Dinner/>}></Route>
         </Route>
-
+        <Route path='menuitem/:itemId' element={<MenuItem/>}></Route>
+        <Route path='/signup' element={<SignUp/>}></Route>
       </Routes>
     </div>
   );
