@@ -7,7 +7,7 @@ const Dinner = () => {
     return (
         <div className='container'>
 
-            <section className='grid grid-cols-3'>
+            <section className='grid md:grid-cols-3 justify-center sm:grid-cols-2 '>
                 {
                     dinner.map(product=><Product
                     key={product.key}

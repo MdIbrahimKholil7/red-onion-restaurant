@@ -34,11 +34,11 @@ const ChooseUs = () => {
     
     return (
         <div className='container'>
-            <div className='w-[60%] my-12'>
-                <h1 className='text-5xl font-bold mb-5'>Why You Choose Us</h1>
+            <div className='w-[60%] my-12 mx-auto sm:mx-auto md:mx-0 sm:text-center text-center md:text-left'>
+                <h1 className='text-5xl font-bold mb-5 '>Why You Choose Us</h1>
                 <p className='text-2xl'>Button waited twenty always repair within we do.An delighted offended curiosity my is dashwoods at.Boy prosperous increasing surrounded. </p>
             </div>
-            <section className='container grid grid-cols-3 gap-12 '>
+            <section className='container grid justify-center sm:grid-cols-2 md:grid-cols-3 gap-12 '>
                 <Card key={fastFoodDetails.id} item={fastFoodDetails}/>
                 <CheifCard key={cheifDetails.id} item={cheifDetails} />
                 <Card key={deliveryDetails.id} item={deliveryDetails}/>

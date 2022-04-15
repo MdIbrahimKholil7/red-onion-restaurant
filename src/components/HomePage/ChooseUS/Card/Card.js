@@ -7,7 +7,7 @@ const Card = ({ item }) => {
     console.log(icon)
     return (
         <div >
-            <div className='w-[29rem] h-[30rem]'>
+            <div className='w-[29rem] h-[48rem] '>
                 <div>
                     <img className='w-[25] mx-auto' src={img} alt={name} />
                 </div>

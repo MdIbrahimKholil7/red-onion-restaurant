@@ -5,7 +5,7 @@ import './Breakfast.css'
 const Breakfast = () => {
     const [breakfast]=useBreakfast()
     return (
-        <div className='grid sm:grid-cols-2 grid-cols-1'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 justify-center grid-cols-1'>
           
                 {
                     breakfast.map(product=><Product
