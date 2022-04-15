@@ -1,19 +1,19 @@
 import React from 'react';
-import { useBreakfast, useDinner } from '../../../hooks/useProduct';
+import { useBreakfast } from '../../../hooks/useProduct';
 import Product from '../Product/Product';
 import './Breakfast.css'
 const Breakfast = () => {
     const [breakfast]=useBreakfast()
     return (
-        <div>
-            <section className='grid grid-cols-3 lg:grid-cols-3 gap-12'>
+        <div className='grid sm:grid-cols-2 grid-cols-1'>
+          
                 {
                     breakfast.map(product=><Product
                     key={product.key}
                     product={product}
                     />)
                 }
-            </section>
+            
         </div>
     );
 };
