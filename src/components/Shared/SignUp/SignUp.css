@@ -1,4 +1,4 @@
-input{
+form input{
     width: 100%;
     height: 4rem;
     background: rgb(218, 213, 213);
@@ -7,6 +7,6 @@ input{
     margin-bottom: 1.4rem;
     font-size: 1.4rem;
 }
-input:focus{
+form input:focus{
     outline: none;
 }

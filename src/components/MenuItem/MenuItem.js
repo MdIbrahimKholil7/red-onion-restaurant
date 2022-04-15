@@ -6,12 +6,11 @@ const MenuItem = () => {
     const [allItem,setAllItem]=useState()
     const {itemId}=useParams()
     const [breakfast]=useBreakfast()
-    const [lunch]=useLunch()
-    
+    const [lunch]=useDinner()
        console.log(breakfast,lunch)
     return (
         <div>
-            <h1>This is menu Item {itemId}</h1>
+            <h1>This is menu Item </h1>
         </div>
     );
 };

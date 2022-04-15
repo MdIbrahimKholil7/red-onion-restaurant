@@ -4,7 +4,6 @@ import React from 'react';
 
 const Card = ({ item }) => {
     const { img, name, details, icon } = item
-    console.log(icon)
     return (
         <div >
             <div className='w-[29rem] h-[48rem] '>

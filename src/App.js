@@ -8,6 +8,7 @@ import Lunch from './components/HomePage/Lunch/Lunch';
 import UnUse from './components/UnUse/UnUse';
 import MenuItem from './components/MenuItem/MenuItem';
 import SignUp from './components/Shared/SignUp/SignUp';
+import Login from './components/Shared/Login/Login';
 
 
 function App() {
@@ -15,13 +16,14 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home />}>
-          <Route path='/' element={<Breakfast/>}></Route>
+         {/*  <Route path='/' element={<Breakfast/>}></Route>
           <Route path='/breakfast' element={<Breakfast/>}></Route>
           <Route path='/lunch' element={<Lunch/>}></Route>
-          <Route path='/dinner' element={<Dinner/>}></Route>
+          <Route path='/dinner' element={<Dinner/>}></Route> */}
         </Route>
-        <Route path='menuitem/:itemId' element={<MenuItem/>}></Route>
+        <Route path='/menuitem/:itemId' element={<MenuItem/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
       </Routes>
     </div>
   );

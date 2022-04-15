@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../product-img/images/logo2.png'
+import Social from '../Social/Social';
 import './SignUp.css'
 const SignUp = () => {
     return (
@@ -22,7 +24,8 @@ const SignUp = () => {
                     <div>
                         <input className='bg-red-600 text-2xl mb-9 text-white rounded-full h-[4rem] py-[1rem 1.4rem]' type="submit" value='Sign Up '/>
                     </div>
-                    <p className='text-center cursor-pointer text-red-500 text-xl'>Already have an account</p>
+                    <Link className='text-center block cursor-pointer text-red-500 text-xl' to='/login'>Already have an account</Link>
+                    <Social/>
                 </form>
             </div>
         </div>

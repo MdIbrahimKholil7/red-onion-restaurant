@@ -2,9 +2,9 @@ import React from 'react';
 
 const Product = ({product}) => {
     const {img,name,price,desc}=product || {}
-    // console.log(product)
+    console.log(product)
     return (
-        <div className='w-[28rem] h-[30rem] text-center p-3  rounded-3xl hover:shadow-lg duration-300 ease-linear' >
+        <div className='w-[28rem] h-[30rem] text-center p-3  rounded-3xl hover:shadow-lg duration-300 ease-linear mx-auto' >
             <div className=''>
                 <img className='w-[15rem] mx-auto object-cover' src={img} alt="" />
             </div>

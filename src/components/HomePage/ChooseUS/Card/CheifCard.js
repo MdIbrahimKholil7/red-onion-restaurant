@@ -2,7 +2,6 @@ import React from 'react';
 import { ArrowSmRightIcon } from '@heroicons/react/solid';
 const CheifCard = ({item}) => {
         const { img, name, details, icon } = item
-    console.log(icon)
     return (
         <div >
             <div className='w-[29rem] h-[48rem]'>

@@ -10,7 +10,7 @@ const Breakfast = () => {
         <div className='grid sm:grid-cols-2 md:grid-cols-3 justify-center grid-cols-1'>
 
             {
-                breakfast.map(product => <Link to={`menuitem/${product.id}`}  key={product.key}>
+                breakfast.map(product => <Link to={`/menuitem/${product.id}`}  key={product.key}>
                     <Product
                        
                         product={product}
