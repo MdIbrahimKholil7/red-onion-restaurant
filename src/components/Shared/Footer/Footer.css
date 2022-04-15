@@ -2,3 +2,15 @@
     display: grid;
     grid-template-columns: 4fr 2fr;
 }
+@media screen and (max-width:640px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+}
+@media screen and (max-width:450px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+}

@@ -7,11 +7,11 @@ const Footer = () => {
     return (
         <div className='bg-black py-10 text-white mt-[20rem]'>
             <section className='container '>
-                <div className='footer-container'>
+                <div className='footer-container sm:grid-cols-2'>
                     <div>
                         <img className='w-[10rem]' src={logo} alt="" />
                     </div>
-                    <div className='bg-red-400 md:flex lg:block justify-between'>
+                    <div className= 'flex sm:flex md:flex  justify-between'>
                         <div >
                             <p>About online food</p>
                             <p>Read our blog</p>
@@ -27,12 +27,12 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <div>
-                       <p> Copyright &copy; {year} online food</p>
-                       <div>
-                           <p>Privacy policy</p>
-                           <p>Terms of use</p>
-                           <p>Pricing</p>
+                    <div className='md:flex sm:flex text-center sm:text-0 justify-between items-center mt-9'>
+                       <p className='text-2xl'> Copyright &copy; {year} online food</p>
+                       <div className='flex text-2xl text-center justify-center mt-6 md:mt-0 sm:mt-6 pb-3 sm:pb-0 md:pb-0'>
+                           <p className='ml-9'>Privacy policy</p>
+                           <p className='ml-9'>Terms of use</p>
+                           <p className='ml-9'>Pricing</p>
                        </div>
                     </div>
                 </div>
