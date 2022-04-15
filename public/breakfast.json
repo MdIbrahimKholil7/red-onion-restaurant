@@ -1,0 +1,50 @@
+[
+    {
+      "img": "breakfast/breakfast1.png",
+      "id": 1,
+      "name": "Eggs Bensdict",
+      "desc": "How we dream about our future",
+      "category":"breakfast",
+      "price":"7.99"
+    },
+    {
+      "img": "breakfast/breakfast2.png",
+      "id": 2,
+      "name": "Breakfast Sandwich",
+      "desc": "How we dream about our future",
+      "category":"breakfast",
+      "price":"8.99"
+    },
+    {
+      "img": "breakfast/breakfast3.png",
+      "id": 3,
+      "name": "Baked Chicken",
+      "desc": "How we dream about our future",
+      "category":"breakfast",
+      "price":"10.99"
+    },
+    {
+      "img": "breakfast/breakfast4.png",
+      "id": 4,
+      "name": "Bagel And Cream Cheese",
+      "desc": "How we dream about our future",
+      "category":"breakfast",
+      "price":"6.99"
+    },
+    {
+      "img": "breakfast/breakfast5.png",
+      "id": 5,
+      "name": "Fried Egg Toast",
+      "desc": "How we dream about our future",
+      "category":"breakfast",
+      "price":"12.99"
+    },
+    {
+      "img": "breakfast/breakfast6.png",
+      "id": 6,
+      "name": "Toast Croissant Fried Egg",
+      "desc": "How we dream about our future",
+      "category":"breakfast",
+      "price":"9.99"
+    }
+  ]
