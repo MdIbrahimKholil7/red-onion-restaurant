@@ -5,7 +5,11 @@ import { BeakerIcon, ChevronLeftIcon, ChevronRightIcon, MinusIcon, PlusIcon, Sho
 import './MenuItem.css'
 const MenuItem = () => {
 
+    // quantity state 
+    const [plus,setPlus]=useState(0)
+    const [minus,setMinus]=useState(0)
     // image state 
+
     const [firstImg, setFirstImg] = useState(0)
     const [secondImg, setSecondImg] = useState(1)
     // all store product 
@@ -35,13 +39,24 @@ const MenuItem = () => {
 
         }
     }, [allItem])
+
+
+    // product quantity 
+    const handlePlus=()=>{
+        setPlus(plus + 1)
+        idProduct.quantity=plus + 1
+        console.log(idProduct)
+    }
+    const handleMinnus=()=>{
+        if (plus > 0){
+            setPlus(plus - 1)
+        }
+    }
+
+
     // index no for img
     let firstIndex = 0;
-    let secondIndex = 1;
-
-    const leftArrow = () => {
-
-    }
+    let secondIndex = 1;  
 
     const rightArrow = () => {
         firstIndex += 2
@@ -55,15 +70,29 @@ const MenuItem = () => {
         setFirstImg(firstIndex)
         setSecondImg(secondIndex)
     }
-
+    const leftArrow=()=>{
+        firstIndex -= 2
+        secondIndex -= 2
+        if (firstIndex < 0) {
+            firstIndex = filterProduct.length - 1
+        }
+        if (secondIndex < 0 ) {
+            secondIndex = filterProduct.length - 2
+        }
+        console.log(firstIndex,secondIndex)
+        setFirstImg(firstIndex)
+        setSecondImg(secondIndex)
+    }
     const handleFirstImg = product => {
         setIdProduct(product)
+        setPlus(0)
        /*  const location=Location.pathname
         let url=location.replace(`menuitem/${product.id}`)
         console.log(url) */
     }
     const handleSecondImg=product=>{
         setIdProduct(product)
+        setPlus(0)
     }
 
     return (
@@ -77,9 +106,9 @@ const MenuItem = () => {
                     <div className='flex items-center justify-start'>
                         <span className='text-6xl font-bold'>${price}</span>
                         <div className='border-solid border-2 py-3 px-2 rounded-full border-indigo-200 flex items-center text-center  ml-10 text-3xl'>
-                            <button className=''><MinusIcon className='w-6' /></button>
-                            <input className='ml-7 w-[5rem]' type="number" value='1' />
-                            <button className=''><PlusIcon className='w-6' /></button>
+                            <button onClick={handleMinnus} className=''><MinusIcon className='w-6' /></button>
+                            <input className='ml-7 w-[5rem]' type="number" value={plus} />
+                            <button onClick={handlePlus} className=''><PlusIcon className='w-6' /></button>
                         </div>
                     </div>
                     <button className='bg-red-500 rounded-full py-3 px-7 items-center flex text-3xl text-white mt-8'><ShoppingCartIcon className='w-8 mr-5' /> Add</button>
